@@ -1,36 +1,18 @@
 % Coded by: Mohamed A. Suliman.
-% E-mail: mohamedabdall78@hotmail.com
+% Email: mohamedabdall78@hotmail.com
 % Date: April 15, 2017
 % snr_estimation version 1.0
+
 %   ----------------
 %  | snr_estimation | is a Matlab function for estimating the SNR by estimating the in the linear system.
 %   ----------------
-% 
-% This function implements the algorithm described in the paper: "SNR Estimation in Linear Systems", 
-% Mohamed Suliman, Ayed M. Alrashdi, Tarig Ballal, & Tareq Y. Al-Naffouri,
-% IEEE Signal Processing Letters, 24 (12), 1867-1871, April 2017.
-%
-%                            Brief Summary 
-%                            -------------
-% We estimate the SNR for the linear systems in the form
-%                           y = Wx + n,
-% Basic assumtions:
-% -----------------
-%
-% 1) W  =  Phsi^(1/2)*W_bar.  (M by K)
-% 2) W_bar : Gaussian matrix with i.i.d. entries of zero mean and unit variance.
-% 3) The entries of x, and those of the noise n, are drawn from any two distributions 
-%    and they are i.i.d. with zero mean and unknown variances.
 
-%                              Function details 
-%                              ----------------
 % Inputs:
 % ------- 
 % y    :  Observations vector of length M.
 % W_bar:  (M by K) Gaussian channel matrix with i.i.d. entries.
 % Phsi :  (M by M) known Hermitian nonnegative left correlation matrix for W_bar.
-% M    :  Number of observations.
-% K    :  Number of unkowns.
+
 
 % Outputs:
 % --------
@@ -38,7 +20,7 @@
 % SNR       :   The signal to noise ratio (SNR) of the linear system. 
 % signal_var:   The signal varince.
 % noise_var :   The noise varince.
-% 
+
 
 function  [SNR ,signal_var, noise_var]  = snr_estimation(y,W_bar,Psi,M,K)
 
