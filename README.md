@@ -1,6 +1,6 @@
 # SNR Estimation
 
-This repository contains the Matlab code for estimating the Signal-to-noise ratio (SNR) in linear systems with Gaussian matrices. This function is the official implementation of the paper [SNR Estimation in Linear Systems With Gaussian Matrices](https://ieeexplore.ieee.org/abstract/document/8052123), IEEE Signal Processing Letters, v. 24, issue 12, December 2017.  
+This repository contains the Matlab function for estimating the Signal-to-noise ratio (SNR) in linear systems with Gaussian matrices. This function is the official implementation of the paper [SNR Estimation in Linear Systems With Gaussian Matrices](https://ieeexplore.ieee.org/abstract/document/8052123), IEEE Signal Processing Letters, v. 24, issue 12, December 2017.  
 
 
 ## Summary 
